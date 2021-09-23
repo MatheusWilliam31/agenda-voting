@@ -1,0 +1,7 @@
+version: '2'
+services:
+  av-postgres:
+    extends:
+      file: postgres/postgres.yml
+      service: av-postgres
+    container_name: av-postgres

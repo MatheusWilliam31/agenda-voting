@@ -24,6 +24,9 @@ public class Votes implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "TOTAL_VOTES")
+    private int totalVotes;
+
     @Column(name = "NEGATIVE_VOTES")
     private int negativeVotes;
 

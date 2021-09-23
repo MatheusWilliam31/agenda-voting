@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelogs/202109222248_create_table_associates.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelogs/202109222257_create_table_schedules.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelogs/202109222306_create_table_votes.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelogs/202109222312_adding_related_tables.xml"
+             relativeToChangelogFile="false"/>
+
+</databaseChangeLog>

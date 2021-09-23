@@ -1,0 +1,9 @@
+version: '2'
+services:
+  av-postgres:
+    image: postgres:11.5
+    environment:
+      - POSTGRES_USER=AGENDA_VOTING_BD
+      - POSTGRES_PASSWORD=AGENDAVOTING123
+    ports:
+    - 5432:5432

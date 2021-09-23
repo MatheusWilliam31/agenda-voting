@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="202109222307-1" author="matheus.loose">
+        <createTable tableName="VOTES" remarks="Table for votes on schedules">
+            <column name="ID" type="BIGINT" autoIncrement="true" remarks="Vote's identifier">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="TOTAL_VOTES" type="VARCHAR(50)" remarks="Total value of votes">
+                <constraints nullable="false"/>
+            </column>
+            <column name="NEGATIVE_VOTES" type="INT" remarks="Total negative votes">
+                <constraints nullable="false"/>
+            </column>
+            <column name="POSITIVE_VOTES" type="INT" remarks="Total positive votes">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ASSOCIATE_ID" type="BIGINT" remarks="Associate's identifier reference">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SCHEDULE_ID" type="BIGINT" remarks="Schedule's identifier reference">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

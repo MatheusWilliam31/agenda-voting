@@ -10,6 +10,7 @@ import java.io.Serializable;
 public class VotesDTO implements Serializable {
 
     private Long id;
+    private int totalVotes;
     private int negativeVotes;
     private int positiveVotes;
     private AssociatesDTO associate;

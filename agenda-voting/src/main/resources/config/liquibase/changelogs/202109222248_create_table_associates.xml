@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="202109222249-1" author="matheus.loose">
+        <createTable tableName="ASSOCIATES" remarks="Table for members who will vote">
+            <column name="ID" type="BIGINT" autoIncrement="true" remarks="Member's identifier">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="NAME" type="VARCHAR(50)" remarks="Member's name">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CPF" type="VARCHAR(12)" remarks="Member's cpf">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
