@@ -1,6 +1,6 @@
-package br.com.mloose.agendavoting.repositories;
+package br.com.mloose.agendavoting.repository;
 
-import br.com.mloose.agendavoting.entities.Schedules;
+import br.com.mloose.agendavoting.entity.Schedules;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

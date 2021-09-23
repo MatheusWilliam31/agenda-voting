@@ -1,4 +1,4 @@
-package br.com.mloose.agendavoting.entities;
+package br.com.mloose.agendavoting.entity;
 
 import lombok.Getter;
 import lombok.Setter;
